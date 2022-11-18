@@ -85,7 +85,7 @@ class Game:
 
 
     def draw(self, p1n, p1c, p2n, p2c):
-        d = "{} drew {} {} drew {}"
+        d = "{} drew {} \n{} drew {}"
         d = d.format(p1n, p1c, p2n, p2c)
         print(d)
 
@@ -123,4 +123,5 @@ class Game:
             return p2.name
         return "It was a tie!"
 
-Game.play_game()
+game = Game()
+game.play_game()
